@@ -6,7 +6,7 @@ def greet(){
     return "Say, hi"
 }
 
-def slackStarted(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME, ENV){
+def slackStarted(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME){
     def iconsSuccess = [":typingcat:", ":batmanrunning:", ":windows:", ":ahhhh:", ":typing_frog:"]
     def randomIndex = (new Random()).nextInt(iconsSuccess.size())
     def attachments = [
@@ -23,7 +23,7 @@ def slackStarted(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME, ENV){
     }
 }
 
-def slackSuccess(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME, ENV){
+def slackSuccess(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME){
     def iconsSuccess = [":everythings_fine_parrot:", ":beer:", ":man_dancing:",":party_parrot:", ":troll_parrot:"]
     def randomIndex = (new Random()).nextInt(iconsSuccess.size())
     def attachments = [
@@ -42,7 +42,7 @@ def slackSuccess(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME, ENV){
     }
 }
 
-def slackFailure(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME, ENV){
+def slackFailure(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME){
     def iconsFailure = ["::alert::", ":typingcat:", ":crisis:", ":facepalm:", ":duckhuntdog:"]
     def randomIndex = (new Random()).nextInt(iconsFailure.size())
     def attachments = [
