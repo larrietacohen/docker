@@ -3,7 +3,7 @@ def call(){
 }
 
 def greet(){
-    return "Say, hi"
+    return "EDBERPHAYDER EL MEJOR"
 }
 
 def slackStarted(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME){
