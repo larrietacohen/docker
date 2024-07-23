@@ -2,8 +2,9 @@ def call(){
     return "Hello From Libraries"
 }
 
-def greet(){
-    return "EDBERPHAYDER EL MEJOR"
+def greet(param1, param2){
+    echo "${param2}"
+    return "EDBERPHAYDER EL MEJOR"+"${param1}"
 }
 
 def slackStarted(BUILD_URL, ENV, ACCOUNT_ID, AWS_REGION, REPO_NAME){
